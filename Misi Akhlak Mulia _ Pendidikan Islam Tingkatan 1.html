@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misi Akhlak Mulia | Pendidikan Islam Tingkatan 1</title>
+<style>
+:root{--ink:#26324a;--pink:#f8a9c4;--purple:#b9a6f5;--blue:#a9d9f7;--mint:#a8e4ce;--yellow:#ffe19a;--paper:#fffdf9;--line:#eadff1}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(135deg,#fff0f5,#f0f7ff 55%,#f5fff7);line-height:1.5}
+header{padding:28px 16px 22px;text-align:center;background:linear-gradient(135deg,#d9d0ff,#ffd8e6,#d4f5e8);border-bottom:4px solid white}
+.pill{display:inline-block;background:#fff9;padding:5px 12px;border-radius:999px;font-weight:700;font-size:.85rem}
+h1{font-size:clamp(1.8rem,6vw,3.2rem);line-height:1.08;margin:12px 0;color:#3a315b}header p{max-width:680px;margin:10px auto}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px}button,.navbtn{border:0;border-radius:14px;padding:11px 15px;font:inherit;font-weight:750;cursor:pointer;transition:transform .15s}button:hover,.navbtn:hover{transform:translateY(-1px)}nav button{background:white;color:var(--ink);box-shadow:0 3px 0 #0000000d}
+main{max-width:980px;margin:auto;padding:18px 14px 40px}.panel{background:#ffffffdf;border:2px solid white;border-radius:22px;padding:20px;margin:16px 0;box-shadow:0 8px 24px #3a315b0c}.panel h2{margin-top:0;font-size:1.45rem}.sub{color:#68718a;font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.tile{border-radius:17px;padding:15px;background:#fff;border:1px solid var(--line)}.tile h3{margin:4px 0 7px;font-size:1.05rem}.emoji{font-size:1.8rem}
+.mindmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}.mindmap .tile:nth-child(1){background:#fff2cc}.mindmap .tile:nth-child(2){background:#fce0eb}.mindmap .tile:nth-child(3){background:#dff3ff}.mindmap .tile:nth-child(4){background:#e5ddff}.mindmap .tile:nth-child(5){background:#dff7e9}
+.activity{border:1px solid var(--line);border-radius:16px;padding:14px;margin:12px 0;background:#fff}.options{display:grid;gap:8px;margin-top:10px}.options button{text-align:left;background:#f5f2ff;border:2px solid transparent}.options button.selected{border-color:#8d78e8;background:#e9e2ff}.options button.correct{background:#dff7e9;border-color:#52b788}.options button.wrong{background:#ffe3e7;border-color:#ed8298}
+.feedback{margin-top:8px;font-weight:650}.primary{background:#5e4bb6;color:white}.pink{background:#ffe0eb}.mint{background:#d9f7e9}.yellow{background:#fff0bd}.score{font-size:1.25rem;font-weight:800;text-align:center;padding:12px;border-radius:15px;background:#f0eaff}.taskinput{width:100%;padding:12px;border:2px solid #e3d9ef;border-radius:12px;font:inherit;margin:5px 0 10px}
+footer{text-align:center;padding:22px;color:#69718a;font-size:.9rem}.hide{display:none}.small{font-size:.9rem}
+@media(max-width:500px){.panel{padding:15px}.panel h2{font-size:1.25rem}button{padding:10px 12px}}
+</style>
+</head>
+<body>
+<header>
+ <span class="pill">PENDIDIKAN ISLAM • KSSM</span>
+ <h1>🌷 Misi Akhlak Mulia 🌷</h1>
+ <p><strong>Ulang Kaji & Pengukuhan Adab dan Akhlak Islamiah</strong><br>Tingkatan 1 · Belajar, bermain dan semak kefahaman!</p>
+ <nav>
+  <button onclick="showSection('nota')">📚 Nota</button><button onclick="showSection('betul')">✅ Betul atau Salah</button><button onclick="showSection('padanan')">🔗 Padankan</button><button onclick="showSection('kuiz')">🏆 Kuiz</button><button onclick="showSection('refleksi')">✍️ Refleksi</button>
+ </nav>
+</header>
+<main>
+<section id="mula" class="panel">
+ <h2>👋 Selamat datang, murid!</h2>
+ <p>Hari ini kita mengulang kaji cara mengamalkan adab dan akhlak mulia dalam kehidupan seharian. Baca nota ringkas, cuba semua aktiviti dan semak markah kamu.</p>
+ <div class="grid">
+  <div class="tile"><div class="emoji">🎯</div><h3>Misi 1: Fahami</h3><p>Baca nota dan contoh amalan.</p></div>
+  <div class="tile"><div class="emoji">🎮</div><h3>Misi 2: Cuba</h3><p>Jawab aktiviti interaktif.</p></div>
+  <div class="tile"><div class="emoji">🌟</div><h3>Misi 3: Buktikan</h3><p>Lengkapkan kuiz dan refleksi.</p></div>
+ </div>
+</section>
+<section id="nota" class="panel">
+ <h2>📚 Nota Pantas: Adab dan Akhlak Islamiah</h2>
+ <p class="sub">Adab ialah tata cara atau tingkah laku yang baik; akhlak ialah sifat dan perilaku yang mencerminkan keperibadian seseorang.</p>
+ <div class="mindmap">
+  <div class="tile"><div class="emoji">🤲</div><h3>Adab terhadap Allah SWT</h3><p>Beribadah, bersyukur, mentaati perintah-Nya dan menjauhi larangan-Nya.</p></div>
+  <div class="tile"><div class="emoji">🧼</div><h3>Adab terhadap diri</h3><p>Menjaga kebersihan, maruah, kesihatan dan disiplin diri.</p></div>
+  <div class="tile"><div class="emoji">🏡</div><h3>Adab terhadap keluarga</h3><p>Menghormati ibu bapa, membantu keluarga dan bercakap dengan sopan.</p></div>
+  <div class="tile"><div class="emoji">🤝</div><h3>Adab terhadap masyarakat</h3><p>Bersikap jujur, amanah, menghormati jiran dan membantu orang lain.</p></div>
+  <div class="tile"><div class="emoji">🌱</div><h3>Adab terhadap alam sekitar</h3><p>Menjaga kebersihan, tidak merosakkan tumbuhan dan tidak membazir.</p></div>
+ </div>
+ <div class="tile" style="margin-top:12px;background:#fff9e8"><strong>💡 Ingat!</strong> Akhlak mulia diamalkan dengan ikhlas kerana Allah SWT, bukan semata-mata untuk mendapat pujian manusia.</div>
+</section>
+<section id="betul" class="panel">
+ <h2>✅ Misi 1: Betul atau Salah?</h2><p class="sub">Pilih jawapan yang sesuai bagi setiap situasi.</p>
+ <div id="tfList"></div><div id="tfScore" class="score hide"></div>
+ <button class="primary" onclick="checkTF()">Semak aktiviti</button> <button class="pink" onclick="resetTF()">Cuba semula</button>
+</section>
+<section id="padanan" class="panel">
+ <h2>🔗 Misi 2: Pilih Padanan</h2><p class="sub">Pilih kategori adab yang sesuai untuk setiap amalan.</p>
+ <div id="matchList"></div><div id="matchScore" class="score hide"></div>
+ <button class="primary" onclick="checkMatch()">Semak padanan</button> <button class="pink" onclick="resetMatch()">Cuba semula</button>
+</section>
+<section id="kuiz" class="panel">
+ <h2>🏆 Misi 3: Kuiz Pengukuhan</h2><p class="sub">5 soalan objektif. Pilih satu jawapan bagi setiap soalan.</p>
+ <div id="quizList"></div><div id="quizScore" class="score hide"></div>
+ <button class="primary" onclick="checkQuiz()">Semak markah</button> <button class="pink" onclick="resetQuiz()">Ulang kuiz</button>
+</section>
+<section id="refleksi" class="panel">
+ <h2>✍️ Misi Akhir: Janji Akhlak Saya</h2>
+ <p>Lengkapkan ayat di bawah. Kemudian salin atau hantar jawapan kepada guru melalui platform kelas.</p>
+ <label for="promise"><strong>1. Satu akhlak mulia yang akan saya amalkan ialah:</strong></label>
+ <input id="promise" class="taskinput" placeholder="Contoh: bercakap sopan dengan ibu bapa">
+ <label for="reason"><strong>2. Saya akan mengamalkannya dengan cara:</strong></label>
+ <textarea id="reason" class="taskinput" rows="3" placeholder="Tulis tindakan yang akan kamu lakukan..."></textarea>
+ <label for="name"><strong>Nama dan kelas:</strong></label>
+ <input id="name" class="taskinput" placeholder="Nama, Tingkatan 1 ...">
+ <button class="primary" onclick="makeReflection()">Sediakan jawapan untuk disalin</button>
+ <div id="reflectionOutput" class="tile hide" style="margin-top:12px"></div>
+ <p class="small sub">Nota: Jawapan tidak dihantar secara automatik kepada guru. Salin jawapan dan hantarkan melalui WhatsApp/Google Classroom.</p>
+</section>
+</main>
+<footer>🌼 Terus amalkan adab mulia walaupun tiada orang melihat. 🌼<br>Bahan ulang kaji PdPR • Pendidikan Islam Tingkatan 1</footer>
+<script>
+const tf=[
+ {q:"1. Aina membantu ibunya mengemas rumah tanpa disuruh.",a:true,why:"Membantu keluarga ialah amalan terpuji."},
+ {q:"2. Hakim membuang sampah ke dalam longkang kerana mahu cepat.",a:false,why:"Sampah perlu dibuang di tempat yang betul."},
+ {q:"3. Kita boleh mengejek rakan jika jawapannya salah.",a:false,why:"Kita perlu menghormati rakan dan menegur dengan sopan."},
+ {q:"4. Menjaga kebersihan diri ialah contoh adab terhadap diri sendiri.",a:true,why:"Kebersihan membantu menjaga kesihatan dan maruah diri."},
+ {q:"5. Kita berbuat baik hanya apabila guru melihat.",a:false,why:"Akhlak mulia perlu diamalkan dengan ikhlas dan konsisten."}
+];
+const matches=[
+ {q:"Membantu ibu bapa di rumah",a:"Keluarga"},
+ {q:"Membuang sampah ke dalam tong",a:"Alam sekitar"},
+ {q:"Bercakap benar kepada rakan",a:"Masyarakat"},
+ {q:"Menjaga kebersihan diri",a:"Diri sendiri"},
+ {q:"Bersyukur dan mentaati perintah Allah SWT",a:"Allah SWT"}
+];
+const cats=["Allah SWT","Diri sendiri","Keluarga","Masyarakat","Alam sekitar"];
+const quiz=[
+ {q:"Apakah maksud akhlak mulia?",o:["Tingkah laku dan sifat yang baik","Perbuatan yang menyakiti orang","Melakukan sesuatu untuk dipuji"],a:0},
+ {q:"Yang manakah contoh adab terhadap Allah SWT?",o:["Membazir makanan","Bersyukur atas nikmat-Nya","Mengejek orang lain"],a:1},
+ {q:"Apakah tindakan yang menunjukkan hormat kepada guru?",o:["Mengganggu ketika guru bercakap","Mendengar arahan dan bercakap sopan","Menertawakan guru"],a:1},
+ {q:"Mengapakah kita perlu menjaga alam sekitar?",o:["Supaya kawasan bersih dan selamat","Supaya boleh membuang sampah merata-rata","Supaya tumbuhan rosak"],a:0},
+ {q:"Apakah contoh sifat amanah?",o:["Mengambil barang orang tanpa izin","Menipu untuk mengelak hukuman","Menjaga barang yang dipinjam dan memulangkannya"],a:2}
+];
+function showSection(id){document.getElementById(id).scrollIntoView({behavior:"smooth",block:"start"})}
+function buildTF(){document.getElementById('tfList').innerHTML=tf.map((x,i)=>`<div class="activity"><strong>${x.q}</strong><div class="options"><button name="tf${i}" onclick="pickTF(${i},true,this)">Betul</button><button name="tf${i}" onclick="pickTF(${i},false,this)">Salah</button></div><div id="tfFb${i}" class="feedback"></div></div>`).join('')}
+let tfAnswers={};function pickTF(i,v,el){tfAnswers[i]=v;document.querySelectorAll(`[name="tf${i}"]`).forEach(b=>b.classList.remove('selected'));el.classList.add('selected')}
+function checkTF(){let score=0;tf.forEach((x,i)=>{let fb=document.getElementById('tfFb'+i);if(tfAnswers[i]===x.a){score++;fb.textContent='Betul! '+x.why;fb.style.color='#16794b'}else{fb.textContent='Jawapan: '+(x.a?'Betul. ':'Salah. ')+x.why;fb.style.color='#a33'}});let el=document.getElementById('tfScore');el.classList.remove('hide');el.textContent=`Markah aktiviti: ${score}/${tf.length}`}
+function resetTF(){tfAnswers={};buildTF();document.getElementById('tfScore').classList.add('hide')}
+function buildMatch(){document.getElementById('matchList').innerHTML=matches.map((x,i)=>`<div class="activity"><strong>${i+1}. ${x.q}</strong><select class="taskinput" id="m${i}"><option value="">-- Pilih kategori --</option>${cats.map(c=>`<option>${c}</option>`).join('')}</select><div id="mfb${i}" class="feedback"></div></div>`).join('')}
+function checkMatch(){let score=0;matches.forEach((x,i)=>{let v=document.getElementById('m'+i).value,fb=document.getElementById('mfb'+i);if(v===x.a){score++;fb.textContent='Betul!';fb.style.color='#16794b'}else{fb.textContent='Jawapan: '+x.a;fb.style.color='#a33'}});let el=document.getElementById('matchScore');el.classList.remove('hide');el.textContent=`Markah padanan: ${score}/${matches.length}`}
+function resetMatch(){buildMatch();document.getElementById('matchScore').classList.add('hide')}
+function buildQuiz(){document.getElementById('quizList').innerHTML=quiz.map((x,i)=>`<div class="activity"><strong>${i+1}. ${x.q}</strong><div class="options">${x.o.map((o,j)=>`<button id="q${i}_${j}" onclick="pickQuiz(${i},${j})">${String.fromCharCode(65+j)}. ${o}</button>`).join('')}</div><div id="qfb${i}" class="feedback"></div></div>`).join('')}
+let quizAnswers={};function pickQuiz(i,j){quizAnswers[i]=j;quiz[i].o.forEach((_,k)=>document.getElementById(`q${i}_${k}`).classList.toggle('selected',k===j))}
+function checkQuiz(){let score=0;quiz.forEach((x,i)=>{x.o.forEach((_,j)=>{let b=document.getElementById(`q${i}_${j}`);b.classList.remove('correct','wrong');if(j===x.a)b.classList.add('correct');else if(quizAnswers[i]===j)b.classList.add('wrong')});let fb=document.getElementById('qfb'+i);if(quizAnswers[i]===x.a){score++;fb.textContent='Betul!';fb.style.color='#16794b'}else{fb.textContent='Jawapan: '+String.fromCharCode(65+x.a)+'. '+x.o[x.a];fb.style.color='#a33'}});let el=document.getElementById('quizScore');el.classList.remove('hide');el.textContent=`Keputusan kamu: ${score}/${quiz.length} ${score===5?'Hebat! Cemerlang!':score>=3?'Bagus! Teruskan usaha.':'Teruskan ulang kaji dan cuba lagi.'}`}
+function resetQuiz(){quizAnswers={};buildQuiz();document.getElementById('quizScore').classList.add('hide')}
+function makeReflection(){let p=document.getElementById('promise').value.trim(),r=document.getElementById('reason').value.trim(),n=document.getElementById('name').value.trim();let out=document.getElementById('reflectionOutput');out.classList.remove('hide');out.innerHTML=`<strong>Jawapan untuk dihantar</strong><p>Nama/kelas: ${esc(n||'Belum diisi')}</p><p>Akhlak mulia yang akan saya amalkan: ${esc(p||'Belum diisi')}</p><p>Cara saya mengamalkannya: ${esc(r||'Belum diisi')}</p><button class="mint" onclick="copyReflection()">Salin jawapan</button>`}
+function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function copyReflection(){let text=`Nama/kelas: ${document.getElementById('name').value}\nAkhlak mulia yang akan saya amalkan: ${document.getElementById('promise').value}\nCara saya mengamalkannya: ${document.getElementById('reason').value}`;if(navigator.clipboard){navigator.clipboard.writeText(text).then(()=>alert('Jawapan disalin. Tampal dalam WhatsApp atau Google Classroom.')).catch(()=>prompt('Salin jawapan ini:',text))}else{prompt('Salin jawapan ini:',text)}}
+buildTF();buildMatch();buildQuiz();
+</script>
+</body></html>
